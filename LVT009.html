@@ -24,19 +24,15 @@
 
 body{
     min-height:100vh;
-
     background:
-        radial-gradient(
-            circle at 50% -20%,
-            #1d477d 0%,
-            #0d2b55 28%,
-            #061a37 60%,
-            #020a18 100%
-        );
+        radial-gradient(circle at 50% -20%,
+        #1d477d 0%,
+        #0d2b55 28%,
+        #061a37 60%,
+        #020a18 100%);
 
     color:#fff;
     font-family:'Inter',sans-serif;
-
     padding:14px 10px 24px;
 }
 
@@ -45,7 +41,6 @@ body{
     max-width:380px;
     margin:0 auto;
 }
-
 
 /* HEADER */
 
@@ -57,7 +52,6 @@ body{
 .logo{
     width:30px;
     height:30px;
-
     margin:0 auto 6px;
 
     display:flex;
@@ -73,30 +67,22 @@ body{
     font-family:'Playfair Display',serif;
     font-size:10px;
     font-weight:700;
-
-    box-shadow:0 0 15px rgba(217,173,50,.12);
 }
 
 .team-name{
     color:#e4b83f;
-
     font-family:'Playfair Display',serif;
-
     font-size:18px;
     font-weight:700;
-
     line-height:1.15;
     letter-spacing:.8px;
 }
 
 .subtitle{
     margin-top:4px;
-
     color:#9caabd;
-
     font-size:6.5px;
     font-weight:600;
-
     letter-spacing:1.9px;
     text-transform:uppercase;
 }
@@ -104,20 +90,14 @@ body{
 .header-line{
     width:35px;
     height:1px;
-
     margin:7px auto 0;
-
     background:#d9ad32;
-
-    box-shadow:0 0 7px rgba(217,173,50,.45);
 }
-
 
 /* CARD */
 
 .card{
     position:relative;
-
     width:100%;
     overflow:hidden;
 
@@ -134,28 +114,12 @@ body{
     box-shadow:0 15px 35px rgba(0,0,0,.30);
 }
 
-.card::before{
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:15%;
-    right:15%;
-
-    height:1px;
-
-    background:#e2b83f;
-    opacity:.8;
-}
-
-
-/* PROFILE */
-
 .profile{
     text-align:center;
     padding:17px 13px 14px;
 }
+
+/* AVATAR */
 
 .avatar{
     width:52px;
@@ -168,7 +132,6 @@ body{
     justify-content:center;
 
     border-radius:50%;
-
     border:1px solid #d9ad32;
 
     background:
@@ -181,29 +144,23 @@ body{
     color:#e4b83f;
 
     font-family:'Playfair Display',serif;
-
     font-size:23px;
     font-weight:700;
-
-    box-shadow:
-        0 0 0 3px rgba(217,173,50,.04);
 }
+
+/* VERIFIED */
 
 .verified{
     display:flex;
-
     align-items:center;
     justify-content:center;
-
     gap:4px;
 
     margin-bottom:5px;
 
     color:#8494aa;
-
     font-size:6.5px;
     font-weight:600;
-
     letter-spacing:1px;
     text-transform:uppercase;
 }
@@ -211,27 +168,24 @@ body{
 .verified-dot{
     width:4px;
     height:4px;
-
     border-radius:50%;
-
     background:#d9ad32;
-
-    box-shadow:0 0 5px rgba(217,173,50,.6);
 }
+
+/* NAME */
 
 .member-name{
     color:#fff;
 
     font-family:'Playfair Display',serif;
-
     font-size:18px;
     font-weight:600;
 
     line-height:1.25;
-    letter-spacing:.1px;
-
     margin-bottom:7px;
 }
+
+/* POSITION */
 
 .position{
     display:inline-block;
@@ -251,16 +205,13 @@ body{
 
     font-size:7px;
     font-weight:700;
-
     letter-spacing:1px;
 }
-
 
 /* MEMBER META */
 
 .member-meta{
     display:grid;
-
     grid-template-columns:1fr 1fr;
 
     border-top:1px solid rgba(217,173,50,.14);
@@ -278,28 +229,21 @@ body{
 
 .meta-label{
     display:block;
-
     color:#718199;
 
     font-size:6px;
     font-weight:600;
-
     letter-spacing:.8px;
 
     text-transform:uppercase;
-
     margin-bottom:3px;
 }
 
 .meta-value{
     color:#dfb53e;
-
     font-size:8.5px;
     font-weight:600;
-
-    letter-spacing:.4px;
 }
-
 
 /* PRIVATE */
 
@@ -334,11 +278,8 @@ body{
     color:#e1b63e;
 
     font-family:'Playfair Display',serif;
-
     font-size:12px;
     font-weight:600;
-
-    line-height:1.2;
 }
 
 .private-subtitle{
@@ -346,7 +287,6 @@ body{
     font-size:6.5px;
     margin-top:2px;
 }
-
 
 /* PASSWORD */
 
@@ -365,14 +305,11 @@ body{
     display:block;
 
     color:#7f8da2;
-
     font-size:6px;
     font-weight:600;
-
     letter-spacing:.8px;
 
     text-transform:uppercase;
-
     margin-bottom:4px;
 }
 
@@ -389,7 +326,6 @@ input{
     padding:0 10px;
 
     outline:none;
-
     text-align:center;
 
     font-family:'Inter',sans-serif;
@@ -402,9 +338,6 @@ input::placeholder{
 
 input:focus{
     border-color:#d9ad32;
-
-    box-shadow:
-        0 0 0 2px rgba(217,173,50,.05);
 }
 
 button{
@@ -429,42 +362,26 @@ button{
 
     font-size:7px;
     font-weight:700;
-
     letter-spacing:.7px;
 
     cursor:pointer;
-
-    transition:.2s ease;
-}
-
-button:hover{
-    filter:brightness(1.06);
-}
-
-button:active{
-    transform:scale(.98);
 }
 
 .error{
     display:none;
-
     margin-top:6px;
 
     color:#ff8585;
-
     text-align:center;
-
     font-size:7px;
 }
 
-
-/* PRIVATE INFORMATION */
+/* PRIVATE INFO */
 
 .private-info{
     display:none;
 
     margin-top:10px;
-
     padding-top:9px;
 
     border-top:1px solid rgba(217,173,50,.16);
@@ -493,7 +410,6 @@ button:active{
     font-weight:700;
 
     letter-spacing:.7px;
-
     text-transform:uppercase;
 
     margin-bottom:2px;
@@ -504,12 +420,10 @@ button:active{
     font-size:8px;
 }
 
-
-/* QR CODE */
+/* QR */
 
 .qr-section{
     margin-top:13px;
-
     padding:13px 10px;
 
     text-align:center;
@@ -530,9 +444,7 @@ button:active{
 
 .qr-subtitle{
     color:#718096;
-
     font-size:6.5px;
-
     margin-bottom:9px;
 }
 
@@ -541,7 +453,6 @@ button:active{
     height:116px;
 
     margin:0 auto;
-
     padding:6px;
 
     display:flex;
@@ -551,11 +462,7 @@ button:active{
     background:#fff;
 
     border-radius:8px;
-
     border:1px solid #d9ad32;
-
-    box-shadow:
-        0 8px 20px rgba(0,0,0,.25);
 }
 
 #qrcode img,
@@ -568,12 +475,9 @@ button:active{
     margin-top:7px;
 
     color:#8c99aa;
-
     font-size:6px;
-
     letter-spacing:.5px;
 }
-
 
 /* FOOTER */
 
@@ -585,7 +489,6 @@ button:active{
     color:#718096;
 
     font-size:6.5px;
-
     letter-spacing:1.5px;
 
     text-transform:uppercase;
@@ -594,7 +497,6 @@ button:active{
 .footer strong{
     color:#c39d34;
 }
-
 
 /* SMALL PHONES */
 
@@ -626,17 +528,6 @@ button:active{
         padding:11px;
     }
 
-    #qrcode{
-        width:108px;
-        height:108px;
-    }
-
-    #qrcode img,
-    #qrcode canvas{
-        width:96px !important;
-        height:96px !important;
-    }
-
 }
 
 </style>
@@ -646,7 +537,6 @@ button:active{
 <body>
 
 <div class="page">
-
 
 <header class="header">
 
@@ -669,11 +559,10 @@ button:active{
 
 <section class="card">
 
-
 <div class="profile">
 
     <div class="avatar">
-        M
+        R
     </div>
 
     <div class="verified">
@@ -685,7 +574,7 @@ button:active{
     </div>
 
     <h2 class="member-name">
-        MUHAMMAD YUSUF
+        RUKAYYAH ABDULHAMID MUHAMMAD
     </h2>
 
     <div class="position">
@@ -704,7 +593,7 @@ button:active{
         </span>
 
         <span class="meta-value">
-            LVT006
+            LVT009
         </span>
 
     </div>
@@ -727,7 +616,6 @@ button:active{
 
 <div class="private">
 
-
 <div class="private-heading">
 
     <div class="private-icon">
@@ -749,8 +637,7 @@ button:active{
 
     <label
         class="password-label"
-        for="password"
-    >
+        for="password">
         Member Password
     </label>
 
@@ -758,8 +645,7 @@ button:active{
         type="password"
         id="password"
         placeholder="Enter password"
-        autocomplete="off"
-    >
+        autocomplete="off">
 
     <button onclick="unlockInfo()">
         VIEW PRIVATE INFORMATION
@@ -767,8 +653,7 @@ button:active{
 
     <div
         class="error"
-        id="error"
-    >
+        id="error">
         Incorrect password. Please try again.
     </div>
 
@@ -777,8 +662,8 @@ button:active{
 
 <div
     class="private-info"
-    id="privateInfo"
->
+    id="privateInfo">
+
 
     <div class="info-item">
 
@@ -787,7 +672,7 @@ button:active{
         </strong>
 
         <span>
-            Sarauta Lyrics
+            Shalele Lyrics
         </span>
 
     </div>
@@ -800,7 +685,7 @@ button:active{
         </strong>
 
         <span>
-            09045867339
+            09128295080
         </span>
 
     </div>
@@ -813,7 +698,7 @@ button:active{
         </strong>
 
         <span>
-            muhammeayusufm928@gmail.com
+            rukayyahabdulhamid21@gmail.com
         </span>
 
     </div>
@@ -826,7 +711,7 @@ button:active{
         </strong>
 
         <span>
-            18
+            21
         </span>
 
     </div>
@@ -839,7 +724,7 @@ button:active{
         </strong>
 
         <span>
-            Nigeria
+            Nigeria 🇳🇬
         </span>
 
     </div>
@@ -852,7 +737,7 @@ button:active{
         </strong>
 
         <span>
-            All Of Them
+            Lyrics/Editing Section
         </span>
 
     </div>
@@ -865,7 +750,7 @@ button:active{
         </strong>
 
         <span>
-            Yes
+            Not Really
         </span>
 
     </div>
@@ -874,13 +759,16 @@ button:active{
     <div class="info-item">
 
         <strong>
-            Why He Joined
+            Why She Joined
         </strong>
 
         <span>
-            Because I trust the organization, as it protects
-            and respects everyone’s dignity. I Love this
-            organization.
+            I want to join LYRICS VIBES TEAM because I love
+            music, lyrics, creativity, and being part of a
+            positive and supportive team. I would also love
+            to improve my skills, share my creativity, learn
+            from other members, and contribute positively
+            to the team.
         </span>
 
     </div>
@@ -889,15 +777,20 @@ button:active{
     <div class="info-item">
 
         <strong>
-            About Him
+            About Her
         </strong>
 
         <span>
-            I am Muhammad Yusuf. I am from Nigeria,
-            specifically Yobe State.
+            I’m a friendly, creative, person who enjoys music,
+            lyrics, editing, and creative content. I’m always
+            willing to learn new things and improve myself.
+            I also enjoy working with others, supporting team
+            members, and contributing my best whenever I’m
+            given an opportunity.
         </span>
 
     </div>
+
 
 </div>
 
@@ -917,7 +810,7 @@ button:active{
     <div id="qrcode"></div>
 
     <p class="qr-note">
-        LYRICS VIBES TEAM • OFFICIAL MEMBER
+        LYRICS VIBES TEAM • LVT009
     </p>
 
 </div>
@@ -944,9 +837,7 @@ button:active{
 
 <script>
 
-/* =========================
-   PASSWORD
-========================= */
+/* PASSWORD */
 
 function unlockInfo(){
 
@@ -960,7 +851,7 @@ function unlockInfo(){
         document.getElementById("error");
 
 
-    if(password === "sarauta##"){
+    if(password === "shalele lyrics22"){
 
         privateInfo.style.display = "block";
 
@@ -990,33 +881,40 @@ document
 });
 
 
-/* =========================
-   QR CODE
-========================= */
+/* QR CODE */
 
 window.addEventListener("load", function(){
 
     const qrContainer =
         document.getElementById("qrcode");
 
+    qrContainer.innerHTML = "";
+
     const profileURL =
         window.location.href.split("#")[0];
 
+    if(typeof QRCode !== "undefined"){
 
-    new QRCode(qrContainer, {
+        new QRCode(qrContainer, {
 
-        text: profileURL,
+            text: profileURL,
 
-        width:104,
-        height:104,
+            width:104,
+            height:104,
 
-        colorDark:"#061832",
-        colorLight:"#ffffff",
+            colorDark:"#061832",
+            colorLight:"#ffffff",
 
-        correctLevel:
-            QRCode.CorrectLevel.H
+            correctLevel:QRCode.CorrectLevel.H
 
-    });
+        });
+
+    }else{
+
+        qrContainer.innerHTML =
+            "<span style='color:#061832;font-size:8px;'>QR CODE FAILED TO LOAD</span>";
+
+    }
 
 });
 
